@@ -12,6 +12,7 @@ target/
 *.iml
 *.ipr
 *.xml
+.idea/uiDesigner.xml
 
 ### Eclipse ###
 .apt_generated
