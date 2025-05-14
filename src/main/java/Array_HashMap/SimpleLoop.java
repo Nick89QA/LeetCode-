@@ -39,9 +39,9 @@ public class SimpleLoop {
                 System.out.println("This is odd number " + nums2[i]);
             }
         }
-      /**
-       * перебрать все уникальные пары чисел в массиве
-       */
+        /**
+         * перебрать все уникальные пары чисел в массиве
+         */
 
         int[] sum4 = {1, 2, 4, 5, 5, 6, 4, 5};
         for (int i = 0; i < sum4.length; i++) {
@@ -53,12 +53,14 @@ public class SimpleLoop {
 
             }
         }
-
-        int [] sum5 = {1,2,33,333,443,45};
+        /**
+         *    Two Sum
+         */
+        int[] sum5 = {1, 2, 33, 333, 443, 45};
         int target5 = 3;
-        for (int i = 0; i<sum5.length; i++){
-            for (int j = i + 1; j<sum5.length;j++) {
-                if (sum5[i] + sum5[j] == target5){
+        for (int i = 0; i < sum5.length; i++) {
+            for (int j = i + 1; j < sum5.length; j++) {
+                if (sum5[i] + sum5[j] == target5) {
                     System.out.println(" Indices " + i + " and " + j);
                 }
             }
