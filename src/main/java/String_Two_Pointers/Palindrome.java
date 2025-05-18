@@ -14,9 +14,12 @@ public class Palindrome {
             int right = s.length() - 1;//обход строки с двух сторон
 
             while (left < right) {
-                while (left < right && !Character.isLetterOrDigit(s.cha))) {
-
+                while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
+                left++; // двигаемся по строке
                 }
+            while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
+             right --; // двигаемся по строке
+
             }
         }
 
