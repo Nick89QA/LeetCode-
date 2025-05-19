@@ -1,7 +1,6 @@
 package String_Two_Pointers;
 
 
-
 public class Palindrome {
     public static void main(String[] args) {
         Palindrome p = new Palindrome(); // инициализация
@@ -9,19 +8,28 @@ public class Palindrome {
 
         System.out.println(" Это палиндром? " + result);
     }
-        public boolean isPalindrome(String s) {
-            int left = 0;
-            int right = s.length() - 1;//обход строки с двух сторон
 
-            while (left < right) {
-                while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
+    public boolean isPalindrome(String s) {
+        int left = 0;
+        int right = s.length() - 1;//обход строки с двух сторон
+
+        while (left < right) {
+            while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
                 left++; // двигаемся по строке
-                }
+            }
             while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
-             right --; // двигаемся по строке
+                right--; // двигаемся по строке
 
             }
+            if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) {
+                return false;
+            }
+
+
+            left++;
+            right--;
         }
+        return true;
 
     }
 }
