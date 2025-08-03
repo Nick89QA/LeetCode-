@@ -32,7 +32,7 @@ public class Duplicate {
 
         List<Integer> nums3 = Arrays.asList(4, 9, -2, 11, 0);
         int min = Collections.max(nums3);
-        System.out.println(" Мин число " + min);
+        System.out.println(" Макс число " + min);
 
 /**
  * Решение с помошью List integer нахождение четного числа
